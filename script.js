@@ -1,5 +1,5 @@
 window.onload = function() {
-    let sliderImages = array.from(document.querySelectorAll('#slider img'));
+    let sliderImages = Array.from(document.querySelectorAll('#slider img'));
     let index = 0;
 
     function showImage(i) {
