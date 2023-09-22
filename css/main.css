@@ -24,11 +24,12 @@
 
 .peak-sec {
   padding-top: 1rem;
+  border-bottom: 2rem solid #A25B5B;
 }
 
 .left-pic {
   float: left;
-  margin-left: 20%;
+  margin-left: 18.5%;
   width: 10%;
   height: auto;
 }
@@ -56,18 +57,30 @@
 .header-nav {
   padding-top: 45px;
 }
-
+.header-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.header-nav ul li {
+  list-style: none;
+}
 .header-a {
   color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .header-a:hover {
-  color: #9DB2BF;
+  color: #643636;
+  text-decoration: underline;
 }
 
 .search-bar {
   display: inline-block;
   color: black;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .luffy {
@@ -93,12 +106,9 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/media/beach-gd.jpg);
   background-size: cover;
   background-position: center;
+  padding-top: 0.5rem;
+  padding-right: 2rem;
 }
-
-.middle-sec {
-  padding-top: 1rem;
-}
-
 #intro {
   text-align: center;
 }
@@ -122,6 +132,7 @@
 .main-p {
   padding-left: 10%;
   padding-right: 0.3rem;
+  text-align: center;
 }
 
 .main-a {
@@ -190,8 +201,22 @@
 
 .contact {
   grid-area: contact;
+  text-align: center;
 }
-
+.contact-info {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.submit-button {
+  padding: 0 0.5rem;
+  background: #E8C07D;
+  border: 0.5px solid #FFF1AF;
+  border-radius: 12px;
+}
+.submit-button:hover {
+  background: #FFF1AF;
+  color: #E8C07D;
+}
 .blank {
   grid-area: blank;
 }
