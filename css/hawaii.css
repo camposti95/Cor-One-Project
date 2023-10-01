@@ -63,12 +63,19 @@ h1 {
     padding-top: 6%;
     color: var(--clr-5);
     text-align: center;
+    /* changed styling */
+    z-index: 11;
+    margin-top: -550px;
 }
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* changed styling */
+    height: 80vh;
+    z-index: -10;
+    top: 10%;
 }
 .bg-block {
     position: absolute;
@@ -81,7 +88,8 @@ main {
     height: 399px;
     background-color: #141d6b;
     border-radius: 10px;
-    z-index: -2;
+    /* changed styling */
+    z-index: 10;
 }
 .bg-block::before, .bg-block::after {
    content: "";
@@ -146,7 +154,6 @@ button#next {
 }
 .footer {
     background: var(--clr-2);
-    position: absolute;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -176,6 +183,72 @@ button#next {
     font-weight: 600;
     list-style: none;
 }
+
+/* start slide code */
+.top-of-scroll {
+    color: white;
+    text-align: center;
+}
+.slide-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.heading {
+    font-size: 3rem;
+    color: var(--clr-5);
+}
+.subheading {
+    font-size: 1.5rem;
+    color: var(--clr-3);
+}
+.first-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 65vh;
+}
+.item:not(:first-child) {
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+}
+.item__content {
+    background-color: var(--clr-1);
+    color: var(--clr-5);
+    text-align: center;
+    padding: 3rem 7rem;
+    border-radius: 7px;
+    display: flex;
+}
+.item > p {
+    text-align: center;
+}
+.left {
+    transform-origin: left center;
+    transform: translateX(-50%);
+}
+.right {
+    transform-origin: right center;
+    transform: translateX(50%);
+}
+.slide-in {
+    opacity: 1 !important;
+    transform: translateX(0);
+}
+section img {
+    width: 400px;
+}
+section h2, section p {
+    color: white;
+}
+/* end slide code */
 
 @keyframes rotation {
     0% { --gradient-angle: 0deg; }
