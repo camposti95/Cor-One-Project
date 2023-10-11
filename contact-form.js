@@ -54,19 +54,21 @@ form.addEventListener('submit', function(e) {
         textArea.style.borderColor = "#FB743E"
         textAreaLabel.style.color = "#FB743E"
         messages.push('Message is required')
-    } else if (textAreaValue > 1) {
+    } else {
         textArea.style.borderColor = "black"
-        textAreaLabelLabel.style.color = "white"
+        textAreaLabel.style.color = "white"
         messages = []
     }
 
 
     if(messages.length > 0) {
+        e.preventDefault()
         errorMessage.innerText = messages.join(' | ')
         setTimeout(() => {
             errorMessage.style.display = 'none'
         }, 3000);
     } else {
+        e.preventDefault()
         sentMessage.style.display = 'block'
         setTimeout(() => {
             sentMessage.style.display = 'none'

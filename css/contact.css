@@ -48,8 +48,25 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 1rem;
+}
+.form-message {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+.error {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.error div {
+    max-width: 600px;
 }
 .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 #sent-message {
@@ -94,6 +111,9 @@ textarea {
     max-width: 800px;
     max-height: 300px;
     font-size: 18px;
+}
+input {
+    max-width: 800px;
 }
 input[type="radio"] {
     width: 10%;
