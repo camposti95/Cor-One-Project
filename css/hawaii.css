@@ -206,14 +206,14 @@ button#next {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 90vh;
+    min-height: 75vh;
 }
 .item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 65vh;
+    min-height: 75vh;
 }
 .item:not(:first-child) {
     opacity: 0;
@@ -226,6 +226,8 @@ button#next {
     padding: 3rem 7rem;
     border-radius: 7px;
     display: flex;
+    align-items: center;
+    max-width: 800px;
 }
 .item > p {
     text-align: center;
@@ -244,9 +246,16 @@ button#next {
 }
 section img {
     width: 400px;
+    height: 250px;
+    border-radius: 20px;
 }
-section h2, section p {
+.p-left {
     color: white;
+    padding: 1rem 0 0 3rem;
+}
+.p-right {
+    color: white;
+    padding: 1rem 3rem 0 0;
 }
 /* end slide code */
 

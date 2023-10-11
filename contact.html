@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact.css">
+    <script src="contact-form.js" defer></script>
+    <title>Contact Form</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./media/luffy.png" alt="">
+        </div>
+        <div class="header-nav">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./hawaii.html">Hawaii</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <div class="form-container">
+            <div id="sent-message">
+                <p>Thanks for the feedback!</p>
+            </div>
+            <div>
+                <p id="error-message"></p>
+            </div>
+            <form id="contact-form" action="#" autocomplete="on">
+                <label for="fname" id="fname-label">First Name:<span>*</span><input type="text" id="fname" name="fname"></label>
+                <label for="lname" id="lname-label">Last Name:<span>*</span><input type="text" id="lname" name="lname"></label>
+                <label for="email" id="email-label">Email:<span>*</span><input type="email" id="email" name="email"></label>
+                <label for="mobile">Mobile Phone:<input type="tel" id="mobile" name="mobile"></label>
+                <label for="">Recieve Text Notification?</label>
+                <label for="radio-yes"><input type="radio" name="check-text">Yes</label>
+                <label for="radio-no"><input type="radio" name="check-text">No</label>
+                <label for="message" id="textarea-label">Message:<span>*</span></label>
+                <textarea name="message" id="message" cols="40" rows="10"></textarea>
+                <input type="submit" class="submit-button">
+            </form>
+            <small><span>*</span> Required</small>
+        </div>
+    </main>
+</body>
+</html>
