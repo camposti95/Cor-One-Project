@@ -68,6 +68,7 @@ h1 {
     border: 5px solid #3A3845;
     border-radius: 10px;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.521);
+    padding: 0.2rem;
 }
 .levitate {
     transform: translateY(-3px);
@@ -105,6 +106,11 @@ h1 {
 }
 .img5 {
     background-image: url(../media/projects-page/AgeCalc.PNG);
+    background-position: center;
+    background-size: cover;
+}
+.img6 {
+    background-image: url(../media/projects-page/calc.PNG);
     background-position: center;
     background-size: cover;
 }
